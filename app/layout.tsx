@@ -6,6 +6,8 @@ import "@fontsource/oswald/600.css";
 import "@fontsource/oswald/700.css";
 import "./globals.css";
 
+const publicBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "NORDWOOD — Engineered Wood for Europe",
   description: "Swiss-grade parquet finishing and engineered wood production in North Macedonia for the European B2B market.",
@@ -13,8 +15,8 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${publicBase}/favicon.svg`,
+    shortcut: `${publicBase}/favicon.svg`,
   },
 };
 
