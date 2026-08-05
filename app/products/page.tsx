@@ -33,7 +33,7 @@ export default function ProductsPage(){
       <div className="catalog-heading"><span>{String(shown.length).padStart(2,"0")} CAPABILITIES</span><p>The scope shown here follows the activities stated in NORDWOOD&apos;s company profile. Technical project parameters are confirmed directly per requirement.</p></div>
       <div className="catalog-grid">
         {shown.map((p,i)=><article className="catalog-card" key={p.name}>
-          <Link className="catalog-image" href={"href" in p?p.href:"/#project"}><img src={p.image} alt={p.name}/><span>0{i+1}</span><b>↗</b></Link>
+          <Link className="catalog-image" href="/#project"><img src={p.image} alt={p.name}/><span>0{i+1}</span><b>↗</b></Link>
           <div className="catalog-card-copy"><span>{p.family.toUpperCase()}</span><h2>{p.name}</h2><p>{p.finish}</p>
             <dl><div><dt>Function</dt><dd>{p.family}</dd></div><div><dt>Site model</dt><dd>Integrated operation</dd></div><div><dt>Market</dt><dd>Europe focused</dd></div></dl>
             <Link href="/contact">Discuss this requirement <span>↗</span></Link>
