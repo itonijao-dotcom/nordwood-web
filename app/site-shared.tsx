@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const publicBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const nav = [
   ["About", "/about"],
   ["Production", "/production"],
@@ -11,7 +13,7 @@ export function SiteHeader({ theme = "dark" }: { theme?: "dark" | "light" }) {
   return (
     <header className={`nw-nav nw-nav--${theme}`}>
       <Link className="nw-logo" href="/" aria-label="NORDWOOD home">
-        <img src={theme === "dark" ? "/brand/nordwood-logo-light.svg" : "/brand/nordwood-logo.svg"} alt="NORDWOOD" />
+        <img src={`${publicBase}${theme === "dark" ? "/brand/nordwood-logo-light.svg" : "/brand/nordwood-logo.svg"}`} alt="NORDWOOD" />
       </Link>
       <nav className="nw-desktop-nav" aria-label="Primary navigation">
         {nav.map(([label, href]) => <Link href={href} key={label}>{label}</Link>)}
@@ -36,7 +38,7 @@ export function SiteFooter() {
     <footer className="nw-footer">
       <div className="nw-footer-top">
         <div>
-          <Link className="nw-logo nw-logo--footer" href="/"><img src="/brand/nordwood-logo-light.svg" alt="NORDWOOD" /></Link>
+          <Link className="nw-logo nw-logo--footer" href="/"><img src={`${publicBase}/brand/nordwood-logo-light.svg`} alt="NORDWOOD" /></Link>
           <p>Industrial parquet production in North Macedonia, developed with a clear orientation toward the European market.</p>
         </div>
         <div>
