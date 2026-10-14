@@ -399,7 +399,7 @@ img{max-width:100%}
 .about-principle-grid h3{font:600 27px "Oswald",sans-serif;text-transform:uppercase;margin:75px 0 15px}
 .about-principle-grid p{font-size:11px;line-height:1.7;color:#626c66}
 
-.about-region{display:grid;grid-template-columns:.85fr 1.15fr;gap:9vw;background:var(--paper-2);align-items:center}
+.about-region{display:block;background:var(--paper-2)}
 .about-region-card{aspect-ratio:1/1;background:var(--deep);color:var(--white);padding:35px;position:relative;display:flex;flex-direction:column;justify-content:center}
 .about-region-card>strong{font:700 clamp(54px,5vw,84px)/.88 "Oswald",sans-serif;margin-top:25px}
 .about-region-card>small{position:absolute;left:35px;bottom:28px;color:rgba(255,255,255,.45);font-size:8px}
@@ -410,13 +410,12 @@ img{max-width:100%}
 .about-region-copy>div span{border:1px solid var(--line);padding:9px 12px;font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
 
 
-.geo-map-card{background:var(--deep);color:var(--white);padding:24px;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:18px;min-height:100%}
-.geo-map-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
-.geo-map-head>div{max-width:420px}
-.geo-map-head strong{display:block;font:700 clamp(28px,3vw,42px)/.94 "Oswald",sans-serif;letter-spacing:-.02em}
-.geo-map-head p{margin:7px 0 0;color:rgba(255,255,255,.58);font-size:11px;line-height:1.6}
-.geo-map-board{display:flex;flex-direction:column;gap:16px}
-.geo-map-svg{width:100%;height:auto;display:block;border-radius:26px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#0b1712,#0a120f);cursor:crosshair}
+.geo-map-card{background:var(--deep);color:var(--white);padding:26px;border:1px solid rgba(255,255,255,.08);min-height:100%}
+.geo-map-layout{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(320px,.78fr);gap:24px;align-items:stretch}
+.geo-map-visual-wrap{display:flex;flex-direction:column;gap:14px}
+.geo-map-visual-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.geo-map-visual-head strong{display:block;font:700 clamp(30px,3vw,46px)/.94 "Oswald",sans-serif;letter-spacing:-.02em}
+.geo-map-svg{width:100%;height:auto;display:block;border-radius:26px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#0b1712,#0a120f);cursor:crosshair;min-height:680px}
 .geo-map-gridlines line{vector-effect:non-scaling-stroke}
 .geo-map-land path{filter:drop-shadow(0 18px 40px rgba(0,0,0,.22))}
 .geo-route{stroke:rgba(196,154,81,.18);stroke-width:1.5;stroke-dasharray:6 9;fill:none;animation:geoDash 8s linear infinite;vector-effect:non-scaling-stroke}
@@ -430,18 +429,23 @@ img{max-width:100%}
 .geo-map-point.is-selected text{fill:#fff7ea}
 .geo-map-point.is-selected .geo-point-pulse{fill:rgba(196,154,81,.18);stroke:rgba(196,154,81,.8)}
 .geo-map-point.is-selected .geo-point-dot{fill:#c49a51;r:6}
-.geo-map-meta{display:grid;grid-template-columns:1fr auto;gap:18px;padding:18px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.geo-sidebar{display:flex;flex-direction:column;gap:16px;padding:12px 0 0}
+.geo-sidebar-head h2{font:700 clamp(50px,5vw,72px)/.9 "Oswald",sans-serif;letter-spacing:-.02em;margin:18px 0 18px}
+.geo-sidebar-head p{margin:0;max-width:380px;color:rgba(255,255,255,.56);font-size:12px;line-height:1.75}
+.geo-map-meta{display:grid;grid-template-columns:1fr;gap:14px;padding:18px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
 .geo-map-meta span,.geo-map-km span{display:block;font-size:8px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 .geo-map-meta strong,.geo-map-km strong{display:block;margin-top:12px;font:700 34px/1 "Oswald",sans-serif;color:var(--white)}
 .geo-map-meta p{margin:4px 0 0;color:rgba(255,255,255,.56);font-size:12px}
-.geo-map-km{text-align:right}
 .geo-map-km small{display:block;margin-top:6px;color:rgba(255,255,255,.48);font-size:10px}
-.geo-market-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.geo-market-list button{min-height:68px;padding:12px 14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:var(--white);display:flex;align-items:flex-end;justify-content:space-between;gap:10px;text-align:left;cursor:pointer;transition:.2s ease}
-.geo-market-list button span{font-size:10px;font-weight:700;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.62)}
-.geo-market-list button strong{font:700 22px/1 "Oswald",sans-serif;color:rgba(255,255,255,.75)}
+.geo-market-list{display:grid;grid-template-columns:1fr;gap:10px;max-height:560px;overflow:auto;padding-right:3px}
+.geo-market-list button{min-height:74px;padding:14px 16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:var(--white);display:flex;align-items:flex-end;justify-content:space-between;gap:14px;text-align:left;cursor:pointer;transition:.2s ease}
+.geo-market-list button>div{display:flex;flex-direction:column;gap:4px}
+.geo-market-list button span{font-size:11px;font-weight:700;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.78)}
+.geo-market-list button small{font-size:11px;color:rgba(255,255,255,.42)}
+.geo-market-list button strong{font:700 24px/1 "Oswald",sans-serif;color:rgba(255,255,255,.75);white-space:nowrap}
 .geo-market-list button:hover,.geo-market-list button.is-selected{border-color:rgba(196,154,81,.46);background:rgba(196,154,81,.1);transform:translateY(-1px)}
 .geo-market-list button.is-selected span,.geo-market-list button.is-selected strong{color:#fff6e7}
+.geo-market-list button.is-selected small{color:rgba(255,246,231,.72)}
 
 @keyframes geoPulse{
   0%,100%{transform:scale(.9);opacity:.7}
@@ -562,14 +566,14 @@ img{max-width:100%}
   .about-principle-grid{grid-template-columns:1fr}
   .about-principle-grid article{min-height:230px}
   .about-principle-grid h3{margin-top:45px}
-  .about-region{grid-template-columns:1fr;gap:50px}
-  .about-region-card{aspect-ratio:auto;min-height:420px}
-  .about-region-copy h2{font-size:56px}
+  .about-region{display:block}
   .geo-map-card{padding:18px}
-  .geo-map-head strong{font-size:34px}
-  .geo-map-meta{grid-template-columns:1fr}
-  .geo-map-km{text-align:left}
-  .geo-market-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .geo-map-layout{grid-template-columns:1fr}
+  .geo-map-visual-head strong{font-size:34px}
+  .geo-map-svg{min-height:0}
+  .geo-sidebar{padding-top:0}
+  .geo-sidebar-head h2{font-size:56px}
+  .geo-market-list{max-height:none}
   .about-sourcing{min-height:620px;padding:75px 20px}
   .about-sourcing h2{font-size:58px}
   .subpage-cta{min-height:500px;padding:70px 20px}
@@ -600,5 +604,8 @@ img{max-width:100%}
   .geo-origin-mark text,.geo-map-point text{font-size:13px}
   .geo-origin-mark text:last-child{font-size:11px}
   .geo-map-meta strong,.geo-map-km strong{font-size:28px}
-  .geo-market-list{grid-template-columns:1fr}
+  .geo-map-card{padding:14px}
+  .geo-sidebar-head h2{font-size:44px}
+  .geo-market-list button{padding:12px 14px}
+  .geo-market-list button strong{font-size:22px}
 }

@@ -66,120 +66,130 @@ export default function EuropeDistanceMap() {
 
   return (
     <div className="geo-map-card">
-      <div className="geo-map-head">
-        <span className="nw-section-tag">LOCATION</span>
-        <div>
-          <strong>SKOPJE → EUROPE</strong>
-          <p>Interactive distance view from North Macedonia to key European market hubs.</p>
-        </div>
-      </div>
-
-      <div className="geo-map-board">
-        <svg className="geo-map-svg" viewBox="0 0 1000 720" aria-label="Interactive Europe logistics distance map">
-          <defs>
-            <linearGradient id="routeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="rgba(196,154,81,.18)" />
-              <stop offset="100%" stopColor="rgba(196,154,81,.95)" />
-            </linearGradient>
-            <radialGradient id="landFill" cx="50%" cy="45%" r="70%">
-              <stop offset="0%" stopColor="#183227" />
-              <stop offset="100%" stopColor="#0c1d16" />
-            </radialGradient>
-          </defs>
-
-          <rect x="0" y="0" width="1000" height="720" rx="32" fill="#091611" />
-
-          <g className="geo-map-gridlines" stroke="rgba(255,255,255,.04)">
-            {Array.from({ length: 7 }).map((_, index) => (
-              <line key={`h-${index}`} x1="70" y1={110 + index * 80} x2="930" y2={110 + index * 80} />
-            ))}
-            {Array.from({ length: 9 }).map((_, index) => (
-              <line key={`v-${index}`} x1={110 + index * 90} y1="80" x2={110 + index * 90} y2="640" />
-            ))}
-          </g>
-
-          <g className="geo-map-land" fill="url(#landFill)" stroke="rgba(196,154,81,.16)" strokeWidth="2">
-            <path d="M171 424l-44-44 13-72 60-39 65 16 48-21 95 29 86-9 73 18 88 67 16 56-41 54-60 16-47 46-68-11-54 29-74-15-46 29-60-8-37-41-35 3-53-21-25-57z" />
-            <path d="M368 455l27 18 18 64 41 66 43 16 12-20-34-47-17-52-24-51z" />
-            <path d="M265 203l27-57 43-39 44 27 4 54-31 35-53 14z" />
-            <path d="M734 178l54-41 46 15 8 51-31 39-51-14z" />
-            <path d="M605 497l23 36 40 11 10-20-31-32z" />
-            <path d="M245 222l32 18-11 36-40-5-6-26z" />
-          </g>
-
-          <g className="geo-routes">
-            {markets.map((market) => {
-              const x2 = market.x * 10;
-              const y2 = market.y * 7.2;
-              const x1 = origin.x * 10;
-              const y1 = origin.y * 7.2;
-              return (
-                <line
-                  key={`route-${market.id}`}
-                  x1={x1}
-                  y1={y1}
-                  x2={x2}
-                  y2={y2}
-                  className={`geo-route ${selectedId === market.id ? "is-selected" : ""}`}
-                />
-              );
-            })}
-          </g>
-
-          <g className="geo-origin-mark">
-            <circle cx={origin.x * 10} cy={origin.y * 7.2} r="18" fill="rgba(196,154,81,.12)" />
-            <circle cx={origin.x * 10} cy={origin.y * 7.2} r="8" fill="#c49a51" />
-            <circle cx={origin.x * 10} cy={origin.y * 7.2} r="4" fill="#fff9ee" />
-            <text x={origin.x * 10 + 20} y={origin.y * 7.2 - 16} fill="#fff7ea">North Macedonia</text>
-            <text x={origin.x * 10 + 20} y={origin.y * 7.2 + 6} fill="rgba(255,255,255,.55)">Skopje hub</text>
-          </g>
-
-          <g>
-            {markets.map((market) => {
-              const x = market.x * 10;
-              const y = market.y * 7.2;
-              const selectedClass = selectedId === market.id ? "is-selected" : "";
-              return (
-                <g
-                  key={market.id}
-                  className={`geo-map-point ${selectedClass}`}
-                  onClick={() => setSelectedId(market.id)}
-                >
-                  <circle className="geo-point-pulse" cx={x} cy={y} r="13" />
-                  <circle className="geo-point-dot" cx={x} cy={y} r="5.2" />
-                  <text x={x + 14} y={y - 10}>{market.country}</text>
-                </g>
-              );
-            })}
-          </g>
-        </svg>
-
-        <div className="geo-map-meta">
-          <div>
-            <span>Selected destination</span>
-            <strong>{selected.country}</strong>
-            <p>{selected.city}</p>
+      <div className="geo-map-layout">
+        <div className="geo-map-visual-wrap">
+          <div className="geo-map-visual-head">
+            <span className="nw-section-tag">THE GEOGRAPHY WORKS</span>
+            <strong>SKOPJE → EUROPE</strong>
           </div>
-          <div className="geo-map-km">
-            <span>Approx. distance</span>
-            <strong>{selected.distanceKm.toLocaleString()} km</strong>
-            <small>Reference from Skopje, North Macedonia</small>
-          </div>
+
+          <svg className="geo-map-svg" viewBox="0 0 1000 720" aria-label="Interactive Europe logistics distance map">
+            <defs>
+              <linearGradient id="routeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="rgba(196,154,81,.18)" />
+                <stop offset="100%" stopColor="rgba(196,154,81,.95)" />
+              </linearGradient>
+              <radialGradient id="landFill" cx="50%" cy="45%" r="70%">
+                <stop offset="0%" stopColor="#183227" />
+                <stop offset="100%" stopColor="#0c1d16" />
+              </radialGradient>
+            </defs>
+
+            <rect x="0" y="0" width="1000" height="720" rx="32" fill="#091611" />
+
+            <g className="geo-map-gridlines" stroke="rgba(255,255,255,.04)">
+              {Array.from({ length: 7 }).map((_, index) => (
+                <line key={`h-${index}`} x1="70" y1={110 + index * 80} x2="930" y2={110 + index * 80} />
+              ))}
+              {Array.from({ length: 9 }).map((_, index) => (
+                <line key={`v-${index}`} x1={110 + index * 90} y1="80" x2={110 + index * 90} y2="640" />
+              ))}
+            </g>
+
+            <g className="geo-map-land" fill="url(#landFill)" stroke="rgba(196,154,81,.16)" strokeWidth="2">
+              <path d="M171 424l-44-44 13-72 60-39 65 16 48-21 95 29 86-9 73 18 88 67 16 56-41 54-60 16-47 46-68-11-54 29-74-15-46 29-60-8-37-41-35 3-53-21-25-57z" />
+              <path d="M368 455l27 18 18 64 41 66 43 16 12-20-34-47-17-52-24-51z" />
+              <path d="M265 203l27-57 43-39 44 27 4 54-31 35-53 14z" />
+              <path d="M734 178l54-41 46 15 8 51-31 39-51-14z" />
+              <path d="M605 497l23 36 40 11 10-20-31-32z" />
+              <path d="M245 222l32 18-11 36-40-5-6-26z" />
+            </g>
+
+            <g className="geo-routes">
+              {markets.map((market) => {
+                const x2 = market.x * 10;
+                const y2 = market.y * 7.2;
+                const x1 = origin.x * 10;
+                const y1 = origin.y * 7.2;
+                return (
+                  <line
+                    key={`route-${market.id}`}
+                    x1={x1}
+                    y1={y1}
+                    x2={x2}
+                    y2={y2}
+                    className={`geo-route ${selectedId === market.id ? "is-selected" : ""}`}
+                  />
+                );
+              })}
+            </g>
+
+            <g className="geo-origin-mark">
+              <circle cx={origin.x * 10} cy={origin.y * 7.2} r="18" fill="rgba(196,154,81,.12)" />
+              <circle cx={origin.x * 10} cy={origin.y * 7.2} r="8" fill="#c49a51" />
+              <circle cx={origin.x * 10} cy={origin.y * 7.2} r="4" fill="#fff9ee" />
+              <text x={origin.x * 10 + 20} y={origin.y * 7.2 - 16} fill="#fff7ea">North Macedonia</text>
+              <text x={origin.x * 10 + 20} y={origin.y * 7.2 + 6} fill="rgba(255,255,255,.55)">Skopje hub</text>
+            </g>
+
+            <g>
+              {markets.map((market) => {
+                const x = market.x * 10;
+                const y = market.y * 7.2;
+                const selectedClass = selectedId === market.id ? "is-selected" : "";
+                return (
+                  <g
+                    key={market.id}
+                    className={`geo-map-point ${selectedClass}`}
+                    onClick={() => setSelectedId(market.id)}
+                  >
+                    <circle className="geo-point-pulse" cx={x} cy={y} r="13" />
+                    <circle className="geo-point-dot" cx={x} cy={y} r="5.2" />
+                    <text x={x + 14} y={y - 10}>{market.country}</text>
+                  </g>
+                );
+              })}
+            </g>
+          </svg>
         </div>
 
-        <div className="geo-market-list" aria-label="European destinations">
-          {markets.map((market) => (
-            <button
-              key={market.id}
-              type="button"
-              className={selectedId === market.id ? "is-selected" : ""}
-              onClick={() => setSelectedId(market.id)}
-            >
-              <span>{market.country}</span>
-              <strong>{market.distanceKm} km</strong>
-            </button>
-          ))}
-        </div>
+        <aside className="geo-sidebar">
+          <div className="geo-sidebar-head">
+            <span className="nw-section-tag">DISTANCE OVERVIEW</span>
+            <h2>CLOSE TO<br/>EUROPEAN FLOWS.</h2>
+            <p>Select a point on the map or choose a market on the right to view approximate distance from Skopje.</p>
+          </div>
+
+          <div className="geo-map-meta">
+            <div>
+              <span>Selected destination</span>
+              <strong>{selected.country}</strong>
+              <p>{selected.city}</p>
+            </div>
+            <div className="geo-map-km">
+              <span>Approx. distance</span>
+              <strong>{selected.distanceKm.toLocaleString()} km</strong>
+              <small>Reference from Skopje, North Macedonia</small>
+            </div>
+          </div>
+
+          <div className="geo-market-list" aria-label="European destinations">
+            {markets.map((market) => (
+              <button
+                key={market.id}
+                type="button"
+                className={selectedId === market.id ? "is-selected" : ""}
+                onClick={() => setSelectedId(market.id)}
+              >
+                <div>
+                  <span>{market.country}</span>
+                  <small>{market.city}</small>
+                </div>
+                <strong>{market.distanceKm} km</strong>
+              </button>
+            ))}
+          </div>
+        </aside>
       </div>
     </div>
   );

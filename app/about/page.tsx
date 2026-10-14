@@ -34,9 +34,8 @@ export default function AboutPage(){
       <div className="about-principle-grid">{principles.map(([n,t,c])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{c}</p></article>)}</div>
     </section>
 
-    <section className="about-region nw-pad">
+        <section className="about-region nw-pad">
       <EuropeDistanceMap/>
-      <div className="about-region-copy"><span className="nw-section-tag">THE GEOGRAPHY WORKS</span><h2>CLOSE TO<br/>EUROPEAN FLOWS.</h2><p>North Macedonia sits in the heart of the Balkans, with road and rail corridors, proximity to regional ports and cross-border connectivity that support logistics toward European markets.</p><div><span>Interactive distance points</span><span>Road &amp; rail corridors</span><span>Regional port access</span></div><Link className="nw-text-link" href="/production">Explore production <span>↗</span></Link></div>
     </section>
 
     <section className="about-sourcing" style={{backgroundImage:`linear-gradient(90deg,rgba(4,16,11,.94),rgba(4,16,11,.46)),url("${sustainableForest}")`}}>
