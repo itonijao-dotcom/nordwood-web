@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { aboutFactory, sustainableForest } from "../assets-home";
 import { SiteFooter, SiteHeader } from "../site-shared";
+import EuropeDistanceMap from "./europe-distance-map";
 
 const principles = [
   ["01","Process stability","A production model built around disciplined, stable and repeatable work."],
@@ -34,8 +35,8 @@ export default function AboutPage(){
     </section>
 
     <section className="about-region nw-pad">
-      <div className="about-region-card"><span className="nw-section-tag">LOCATION</span><strong>NORTH<br/>MACEDONIA</strong><div className="region-dot"/><small>Highway-adjacent industrial site</small></div>
-      <div className="about-region-copy"><span className="nw-section-tag">THE GEOGRAPHY WORKS</span><h2>CLOSE TO<br/>EUROPEAN FLOWS.</h2><p>North Macedonia sits in the heart of the Balkans, with road and rail corridors, proximity to regional ports and cross-border connectivity that support logistics toward European markets.</p><div><span>EUR.1 framework when eligible</span><span>Road &amp; rail corridors</span><span>Regional port access</span></div><Link className="nw-text-link" href="/production">Explore production <span>↗</span></Link></div>
+      <EuropeDistanceMap/>
+      <div className="about-region-copy"><span className="nw-section-tag">THE GEOGRAPHY WORKS</span><h2>CLOSE TO<br/>EUROPEAN FLOWS.</h2><p>North Macedonia sits in the heart of the Balkans, with road and rail corridors, proximity to regional ports and cross-border connectivity that support logistics toward European markets.</p><div><span>Interactive distance points</span><span>Road &amp; rail corridors</span><span>Regional port access</span></div><Link className="nw-text-link" href="/production">Explore production <span>↗</span></Link></div>
     </section>
 
     <section className="about-sourcing" style={{backgroundImage:`linear-gradient(90deg,rgba(4,16,11,.94),rgba(4,16,11,.46)),url("${sustainableForest}")`}}>
