@@ -1,0 +1,190 @@
+.geography{background:#0a1c15;color:#fcfbf6;padding:38px 36px 24px;border-top:2px solid #c49a51}
+.heading{display:grid;grid-template-columns:1.65fr 1fr;gap:32px;align-items:end;margin-bottom:30px}
+.heading h2{font:700 clamp(46px,4.7vw,72px)/.95 "Oswald",sans-serif;letter-spacing:-.025em;margin:18px 0 0}
+.heading h2 em{color:#e0bd7d;font-style:normal}
+.headingCopy{padding-bottom:3px}
+.headingCopy p{font-size:12px;line-height:1.85;color:#aab6a9;margin:15px 0 0}
+.originBadge{display:inline-flex;align-items:center;gap:8px;font-size:9px;letter-spacing:.12em;font-weight:700;color:#e0bd7d}
+.originBadge i{width:6px;height:6px;background:#e0bd7d;border-radius:50%;box-shadow:0 0 0 4px #c49a5114}
+.explorer{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(320px,1fr);gap:32px}
+.mapPanel{min-width:0}
+.mapFrame{height:580px;position:relative;overflow:hidden;background:#071711;border:1px solid #ffffff12}
+.mapCanvas{width:100%;height:100%;background:radial-gradient(ellipse at 50% 45%,#10251b,#071711 75%);font-family:"Manrope",sans-serif;z-index:0}
+.mapCanvas:focus-visible{outline-offset:-3px}
+.mapEyebrow{position:absolute;top:18px;left:18px;right:18px;display:flex;align-items:center;gap:8px;font-size:8px;letter-spacing:.13em;font-weight:700;color:#c0c9bb;pointer-events:none;z-index:500}
+.liveDot{height:5px;width:5px;background:#e0bd7d;border-radius:50%;flex:none}
+.mapMode{margin-left:auto;color:#a6b399;border:1px solid #a6b39930;padding:6px 8px;background:#081a13cc;letter-spacing:.08em}
+.controls{position:absolute;top:67px;right:15px;display:flex;flex-direction:column;background:#0a1c15ed;border:1px solid #b3bfa733;z-index:500}
+.controls button{width:40px;height:40px;border:0;background:transparent;color:#e4decf;display:grid;place-items:center;cursor:pointer;transition:background .15s}
+.controls button+button{border-top:1px solid #b3bfa733}
+.controls button:hover{background:#c49a5124;color:#e0bd7d}
+.controls button:disabled{opacity:.3;cursor:wait}
+.controls button span{font-size:24px;line-height:1;font-weight:400}
+.controls button svg{width:21px;height:21px}
+.mapLegend{position:absolute;bottom:39px;left:18px;display:flex;gap:19px;color:#bac4b4;z-index:500;pointer-events:none}
+.mapLegend>span{display:flex;align-items:center;gap:6px;font-size:7px;letter-spacing:.06em;font-weight:700}
+.mapLegend i{width:6px;height:6px;border-radius:50%;display:inline-block}
+.legendOrigin{background:#e0bd7d;box-shadow:0 0 0 3px #c49a5124}
+.legendDestination{background:#263f30;border:1px solid #d7b981}
+.mapCaption{height:48px;display:flex;align-items:center;justify-content:space-between;gap:14px;color:#d7ded1;border-bottom:1px solid #ffffff17}
+.mapCaption>span{display:flex;align-items:center;gap:10px;font-size:12px}
+.mapCaption>span svg{width:20px;height:20px;color:#c49a51}
+.mapCaption>span strong{font-weight:600}
+.mapCaption>small{font-size:9px;color:#94a28f}
+.sidebar{height:628px;min-width:0;display:flex;flex-direction:column}
+.sidebarHeading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:18px}
+.sidebarHeading>span{font-size:9px;font-weight:700;letter-spacing:.13em;color:#e0bd7d}
+.sidebarHeading small{font-size:10px;color:#adbaa6}
+.destination{border-top:1px solid #c49a5180;border-bottom:1px solid #c49a5140;padding:16px 0 18px}
+.destinationHeading{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.destinationHeading>span{display:flex;align-items:center;gap:7px;color:#b6c2ad;font-size:8px;font-weight:700;letter-spacing:.08em}
+.destinationHeading>span:last-child{color:#e0bd7d;font-size:7px;white-space:nowrap}
+.destinationHeading svg{width:17px;height:17px;color:#c49a51}
+.destinationValue{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-top:12px}
+.destinationValue h3{font:600 28px/1.07 "Oswald",sans-serif;margin:0;color:#fcfbf6;letter-spacing:-.015em}
+.destinationValue p{margin:5px 0 0;font-size:11px;color:#adbaa6}
+.destinationValue>strong{font:600 clamp(40px,3.75vw,56px)/.95 "Oswald",sans-serif;letter-spacing:-.03em;color:#e0bd7d;white-space:nowrap}
+.destinationValue>strong>small{font:600 12px/1 "Manrope",sans-serif;letter-spacing:0;margin-left:7px;color:#b5c1ad}
+.search{display:flex;align-items:center;gap:9px;border:1px solid #b5c4a830;margin:18px 0 17px;padding:0 12px;min-height:42px;background:#0e231a}
+.search:focus-within{border-color:#c49a51}
+.search>svg{width:16px;height:16px;color:#a2b398;flex:none}
+.search input{border:0;outline:none;background:transparent;color:#fcfbf6;font-size:11px;min-width:0;flex:1;padding:12px 0}
+.search input::placeholder{color:#9eae95}
+.search input::-webkit-search-cancel-button{-webkit-appearance:none}
+.search button{background:transparent;color:#c7cfbf;border:0;font-size:22px;padding:4px 0 4px 4px;cursor:pointer;line-height:1}
+.listHeader{display:flex;justify-content:space-between;gap:8px;font-size:7px;letter-spacing:.11em;font-weight:700;color:#9cad90;padding:0 12px 10px;border-bottom:1px solid #ffffff20}
+.marketList{overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#8b7544 #10251b;min-height:200px;flex:1}
+.marketList::-webkit-scrollbar{width:4px}
+.marketList::-webkit-scrollbar-track{background:#10251b}
+.marketList::-webkit-scrollbar-thumb{background:#8b7544}
+.marketList>button{position:relative;width:100%;border:0;border-bottom:1px solid #ffffff12;padding:12px 10px 12px 12px;display:flex;align-items:center;gap:12px;text-align:left;background:transparent;color:#fcfbf6;cursor:pointer;min-height:61px;transition:background .18s}
+.marketList>button::before{content:"";position:absolute;top:9px;bottom:9px;left:0;width:2px;background:transparent}
+.marketList>button:hover{background:#c49a510d}
+.marketList>button:focus-visible{outline-offset:-2px}
+.marketList>button.selectedRow{background:#c49a5114}
+.marketList>button.selectedRow::before{background:#e0bd7d}
+.countryCode{width:23px;flex:none;font-size:9px;letter-spacing:.04em;color:#9bad8e;font-weight:600}
+.countryName{min-width:0;display:flex;flex:1;flex-direction:column;gap:4px}
+.countryName strong{font-size:12px;line-height:1.35;font-weight:600;color:#e2e6db}
+.countryName small{font-size:9px;line-height:1.2;color:#9cac91}
+.rowDistance{flex:none;display:flex;align-items:baseline;gap:5px;font:500 23px/1 "Oswald",sans-serif;color:#dbe1d1;font-variant-numeric:tabular-nums}
+.rowDistance small{font:500 9px/1 "Manrope",sans-serif;color:#9cac91}
+.rowDistance svg{align-self:center;width:15px;height:15px;color:#e0bd7d;opacity:0}
+.selectedRow .rowDistance,.selectedRow .countryCode{color:#e0bd7d}
+.selectedRow .countryName strong{color:#fcfbf6}
+.selectedRow .rowDistance svg,.marketList>button:hover .rowDistance svg{opacity:1}
+.distanceNote{font-size:9px;line-height:1.75;color:#a5b299;margin:15px 0 0;padding-top:12px;border-top:1px solid #ffffff1a}
+.footer{display:flex;justify-content:space-between;align-items:center;gap:18px;border-top:1px solid #ffffff1a;margin-top:26px;padding-top:19px}
+.footer>span{font-size:8px;letter-spacing:.1em;font-weight:700;color:#c2cabb}
+.footer small{font-size:8px;line-height:1.6;color:#96a68b;text-align:right}
+.mapLoading{position:absolute;inset:0;background:#091d15;z-index:600;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:15px;color:#c0cbb6;font-size:11px}
+.mapLoading p{margin:0}
+.mapLoading button,.emptyList button{background:transparent;border:1px solid #c49a5166;color:#e0bd7d;padding:10px 14px;font-size:11px;cursor:pointer}
+.loadingRing{width:26px;height:26px;border:1px solid #c49a5130;border-top-color:#e0bd7d;border-radius:50%;animation:spin 1.5s linear infinite}
+.emptyList{padding:28px 16px;font-size:12px;color:#d4ddc9}
+.emptyList p{font-size:11px;color:#a5b299}
+.emptyList button{margin-top:10px}
+
+/* These selectors are scoped to this map and cannot affect other sections. */
+.mapCanvas :global(.leaflet-control-attribution){background:#071711cc;color:#9dad91;font:8px/1.6 "Manrope",sans-serif;padding:3px 6px}
+.mapCanvas :global(.leaflet-control-attribution) a{color:#bdc9ac}
+.mapCanvas :global(.leaflet-control-scale){margin:0 0 9px 18px}
+.mapCanvas :global(.leaflet-control-scale-line){background:#071711b3;color:#b8c7aa;border-color:#b8c7aa;font:8px/1.3 "Manrope",sans-serif;text-shadow:none;padding:2px 4px}
+.mapCanvas :global(.leaflet-tooltip){font-family:"Manrope",sans-serif}
+.countryLabel{color:#a4b595;font:600 9px/1 "Manrope",sans-serif;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;justify-content:center;pointer-events:none;text-shadow:0 1px 3px #071711}
+.pin{display:grid;place-items:center;background:transparent;border:0;cursor:pointer}
+.pin>span{width:5px;height:5px;background:#b5bb96;border:1px solid #edf0d7;border-radius:50%;box-shadow:0 0 0 3px #081a13b3;transition:background .2s,box-shadow .2s}
+.pin:hover>span{width:7px;height:7px;background:#e0bd7d}
+.selectedPin>span{width:8px;height:8px;background:#e0bd7d;border-color:#fff5db;box-shadow:0 0 0 5px #c49a5130,0 0 18px #c49a514d}
+.originPin{display:grid;place-items:center;background:transparent;border:0;pointer-events:none}
+.originPin>span{width:10px;height:10px;background:#e0bd7d;border:2px solid #fff4d3;border-radius:50%;z-index:1;box-shadow:0 0 15px #e0bd7d40}
+.originPin>i{position:absolute;inset:4px;border:1px solid #e0bd7d80;border-radius:50%;animation:originPulse 3s ease-out infinite}
+.originTooltip{background:transparent;border:0;box-shadow:none;color:#fff5dd;padding:0;font-size:9px;line-height:1.7}
+.originTooltip::before{display:none}
+.originTooltip b{display:block;letter-spacing:.09em;font-size:10px;font-weight:700}
+.originTooltip span{display:block;font-size:8px;color:#c1cbb4}
+.destinationTooltip{background:#0a1c15f2;border:1px solid #c49a5199;color:#fff4d5;box-shadow:0 5px 20px #0003;padding:8px 11px;text-align:center;line-height:1.5}
+.destinationTooltip b{display:block;letter-spacing:.05em;font-size:10px;font-weight:700}
+.destinationTooltip span{display:block;font-size:9px;color:#e0bd7d}
+.destinationTooltip:global(.leaflet-tooltip-top)::before{border-top-color:#c49a51}
+.hoverTooltip{background:#122a1ff2;border:1px solid #c49a514d;box-shadow:none;color:#f0ebdc;font-size:10px;padding:6px 9px}
+.hoverTooltip::before{display:none}
+.route{filter:drop-shadow(0 0 3px #c49a5150)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes originPulse{0%{transform:scale(.65);opacity:.8}85%,100%{transform:scale(1.5);opacity:0}}
+
+@media(max-width:1100px){
+  .geography{padding:30px 26px 22px}
+  .explorer,.heading{gap:24px;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr)}
+  .destinationValue h3{font-size:25px}
+  .destinationValue>strong{font-size:45px}
+  .mapCaption>small{display:none}
+  .rowDistance{font-size:21px}
+  .marketList>button{gap:9px}
+}
+@media(max-width:980px){
+  .explorer{grid-template-columns:1fr}
+  .heading{grid-template-columns:1.5fr 1fr}
+  .mapFrame{height:560px}
+  .sidebar{height:auto}
+  .sidebarHeading{margin:4px 0 18px}
+  .destination{padding:18px 0}
+  .destinationValue h3{font-size:32px}
+  .destinationValue>strong{font-size:54px}
+  .marketList{flex:none;max-height:340px;min-height:0}
+  .countryName strong{font-size:13px}
+  .countryName small{font-size:10px}
+  .rowDistance{font-size:23px}
+  .distanceNote{font-size:10px}
+}
+@media(max-width:600px){
+  .geography{padding:26px 16px 20px;margin:0 -4px}
+  .heading{grid-template-columns:1fr;gap:18px;margin-bottom:23px}
+  .heading :global(.nw-section-tag){font-size:8px;letter-spacing:.12em}
+  .heading h2{font-size:49px;margin-top:14px;line-height:.98}
+  .headingCopy p{font-size:11px;margin-top:10px}
+  .originBadge{font-size:8px}
+  .explorer{gap:24px}
+  .mapFrame{height:440px}
+  .mapEyebrow{top:14px;left:12px;right:12px;font-size:7px;letter-spacing:.09em;gap:6px}
+  .mapMode{font-size:6px;padding:5px}
+  .controls{right:10px;top:54px}
+  .controls button{width:38px;height:40px}
+  .countryLabel{font-size:8px;letter-spacing:.02em}
+  .mapLegend{left:12px;gap:12px;bottom:37px}
+  .mapLegend>span{font-size:6px;letter-spacing:.02em}
+  .mapCanvas :global(.leaflet-control-scale){margin-left:12px}
+  .mapCanvas :global(.leaflet-control-attribution){font-size:7px}
+  .mapCaption{height:43px}
+  .sidebarHeading>span{font-size:8px}
+  .sidebarHeading small{font-size:9px}
+  .destinationHeading>span{font-size:7px}
+  .destinationValue h3{font-size:28px}
+  .destinationValue>strong{font-size:48px}
+  .destinationValue>strong>small{font-size:11px;margin-left:5px}
+  .search{min-height:45px;margin-bottom:17px}
+  .search input{font-size:16px;padding:11px 0;letter-spacing:-.03em}
+  .marketList{max-height:330px}
+  .marketList>button{padding:12px 7px 12px 10px;gap:9px;min-height:64px}
+  .countryName strong{font-size:12px}
+  .countryCode{width:20px;font-size:8px}
+  .rowDistance{font-size:22px;gap:4px}
+  .rowDistance svg{width:13px;height:13px}
+  .listHeader{font-size:6px;letter-spacing:.06em;padding-left:10px;padding-right:9px}
+  .distanceNote{font-size:9px}
+  .footer{display:block;margin-top:23px;padding-top:17px}
+  .footer>span{display:block;font-size:7px}
+  .footer small{display:block;font-size:7px;margin-top:9px;text-align:left}
+}
+@media(max-width:370px){
+  .geography{padding-left:12px;padding-right:12px}
+  .heading h2{font-size:43px}
+  .destinationValue h3{font-size:23px}
+  .destinationValue>strong{font-size:42px}
+  .rowDistance{font-size:20px}
+  .countryName strong{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+  .loadingRing,.originPin>i{animation:none}
+  .pin>span,.marketList>button{transition:none}
+}

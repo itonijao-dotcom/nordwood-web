@@ -1,0 +1,333 @@
+{
+  "origin": {
+    "country": "North Macedonia",
+    "city": "Skopje",
+    "code": "MK",
+    "lat": 42.000006,
+    "lon": 21.433462
+  },
+  "destinations": [
+    {
+      "code": "DE",
+      "country": "Germany",
+      "city": "Munich",
+      "lat": 48.131888,
+      "lon": 11.573048
+    },
+    {
+      "code": "AT",
+      "country": "Austria",
+      "city": "Vienna",
+      "lat": 48.201961,
+      "lon": 16.364693
+    },
+    {
+      "code": "CH",
+      "country": "Switzerland",
+      "city": "Zurich",
+      "lat": 47.381934,
+      "lon": 8.548064
+    },
+    {
+      "code": "IT",
+      "country": "Italy",
+      "city": "Milan",
+      "lat": 45.471921,
+      "lon": 9.203063
+    },
+    {
+      "code": "FR",
+      "country": "France",
+      "city": "Paris",
+      "lat": 48.868639,
+      "lon": 2.33139
+    },
+    {
+      "code": "BE",
+      "country": "Belgium",
+      "city": "Brussels",
+      "lat": 50.835263,
+      "lon": 4.331371
+    },
+    {
+      "code": "NL",
+      "country": "Netherlands",
+      "city": "Amsterdam",
+      "lat": 52.351915,
+      "lon": 4.914694
+    },
+    {
+      "code": "CZ",
+      "country": "Czechia",
+      "city": "Prague",
+      "lat": 50.085283,
+      "lon": 14.464034
+    },
+    {
+      "code": "PL",
+      "country": "Poland",
+      "city": "Warsaw",
+      "lat": 52.251947,
+      "lon": 20.998054
+    },
+    {
+      "code": "HU",
+      "country": "Hungary",
+      "city": "Budapest",
+      "lat": 47.501952,
+      "lon": 19.081375
+    },
+    {
+      "code": "RO",
+      "country": "Romania",
+      "city": "Bucharest",
+      "lat": 44.435318,
+      "lon": 26.098001
+    },
+    {
+      "code": "GR",
+      "country": "Greece",
+      "city": "Athens",
+      "lat": 37.985272,
+      "lon": 23.731375
+    },
+    {
+      "code": "AL",
+      "country": "Albania",
+      "city": "Tirana",
+      "lat": 41.327541,
+      "lon": 19.818883
+    },
+    {
+      "code": "AD",
+      "country": "Andorra",
+      "city": "Andorra la Vella",
+      "lat": 42.500001,
+      "lon": 1.516486
+    },
+    {
+      "code": "BY",
+      "country": "Belarus",
+      "city": "Minsk",
+      "lat": 53.901923,
+      "lon": 27.564681
+    },
+    {
+      "code": "BA",
+      "country": "Bosnia & Herzegovina",
+      "city": "Sarajevo",
+      "lat": 43.850022,
+      "lon": 18.383002
+    },
+    {
+      "code": "BG",
+      "country": "Bulgaria",
+      "city": "Sofia",
+      "lat": 42.685295,
+      "lon": 23.314708
+    },
+    {
+      "code": "HR",
+      "country": "Croatia",
+      "city": "Zagreb",
+      "lat": 45.800007,
+      "lon": 15.999995
+    },
+    {
+      "code": "CY",
+      "country": "Cyprus",
+      "city": "Nicosia",
+      "lat": 35.166677,
+      "lon": 33.366635
+    },
+    {
+      "code": "DK",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "lat": 55.68051,
+      "lon": 12.56154
+    },
+    {
+      "code": "EE",
+      "country": "Estonia",
+      "city": "Tallinn",
+      "lat": 59.433877,
+      "lon": 24.728041
+    },
+    {
+      "code": "FI",
+      "country": "Finland",
+      "city": "Helsinki",
+      "lat": 60.177509,
+      "lon": 24.932181
+    },
+    {
+      "code": "IS",
+      "country": "Iceland",
+      "city": "Reykjavik",
+      "lat": 64.150024,
+      "lon": -21.950015
+    },
+    {
+      "code": "IE",
+      "country": "Ireland",
+      "city": "Dublin",
+      "lat": 53.335007,
+      "lon": -6.250852
+    },
+    {
+      "code": "XK",
+      "country": "Kosovo",
+      "city": "Pristina",
+      "lat": 42.66671,
+      "lon": 21.165984
+    },
+    {
+      "code": "LV",
+      "country": "Latvia",
+      "city": "Riga",
+      "lat": 56.950024,
+      "lon": 24.099965
+    },
+    {
+      "code": "LI",
+      "country": "Liechtenstein",
+      "city": "Vaduz",
+      "lat": 47.133724,
+      "lon": 9.51667
+    },
+    {
+      "code": "LT",
+      "country": "Lithuania",
+      "city": "Vilnius",
+      "lat": 54.683366,
+      "lon": 25.316635
+    },
+    {
+      "code": "LU",
+      "country": "Luxembourg",
+      "city": "Luxembourg",
+      "lat": 49.61166,
+      "lon": 6.130003
+    },
+    {
+      "code": "MT",
+      "country": "Malta",
+      "city": "Valletta",
+      "lat": 35.899733,
+      "lon": 14.514711
+    },
+    {
+      "code": "MD",
+      "country": "Moldova",
+      "city": "Chisinau",
+      "lat": 47.005024,
+      "lon": 28.857711
+    },
+    {
+      "code": "MC",
+      "country": "Monaco",
+      "city": "Monaco",
+      "lat": 43.739646,
+      "lon": 7.406913
+    },
+    {
+      "code": "ME",
+      "country": "Montenegro",
+      "city": "Podgorica",
+      "lat": 42.465973,
+      "lon": 19.266307
+    },
+    {
+      "code": "NO",
+      "country": "Norway",
+      "city": "Oslo",
+      "lat": 59.918636,
+      "lon": 10.748033
+    },
+    {
+      "code": "PT",
+      "country": "Portugal",
+      "city": "Lisbon",
+      "lat": 38.724669,
+      "lon": -9.146812
+    },
+    {
+      "code": "RU",
+      "country": "Russia",
+      "city": "Moscow",
+      "lat": 55.75411,
+      "lon": 37.613577
+    },
+    {
+      "code": "SM",
+      "country": "San Marino",
+      "city": "San Marino",
+      "lat": 43.936096,
+      "lon": 12.44177
+    },
+    {
+      "code": "RS",
+      "country": "Serbia",
+      "city": "Belgrade",
+      "lat": 44.820591,
+      "lon": 20.466045
+    },
+    {
+      "code": "SK",
+      "country": "Slovakia",
+      "city": "Bratislava",
+      "lat": 48.150018,
+      "lon": 17.116981
+    },
+    {
+      "code": "SI",
+      "country": "Slovenia",
+      "city": "Ljubljana",
+      "lat": 46.055288,
+      "lon": 14.514969
+    },
+    {
+      "code": "ES",
+      "country": "Spain",
+      "city": "Madrid",
+      "lat": 40.401972,
+      "lon": -3.685298
+    },
+    {
+      "code": "SE",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "lat": 59.352706,
+      "lon": 18.095389
+    },
+    {
+      "code": "TR",
+      "country": "Türkiye",
+      "city": "Istanbul",
+      "lat": 41.106942,
+      "lon": 29.008056
+    },
+    {
+      "code": "UA",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "lat": 50.435313,
+      "lon": 30.514682
+    },
+    {
+      "code": "GB",
+      "country": "United Kingdom",
+      "city": "London",
+      "lat": 51.501941,
+      "lon": -0.118668
+    },
+    {
+      "code": "VA",
+      "country": "Vatican City",
+      "city": "Vatican City",
+      "lat": 41.903282,
+      "lon": 12.453387
+    }
+  ]
+}

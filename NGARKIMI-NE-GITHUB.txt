@@ -1,0 +1,23 @@
+NORDWOOD — GATI PËR GITHUB PAGES
+
+1. Shpaketo ZIP-in.
+2. Në repository-n e GitHub, ngarko skedarët dhe dosjet brenda ZIP-it në rrënjë, në branch-in main.
+   package.json, app/ dhe public/ duhet të duken direkt në faqen kryesore të repository-t.
+3. Përfshi dosjen .github dhe skedarin .github/workflows/deploy-pages.yml.
+   Në Mac, përdor Command + Shift + . për t'i shfaqur dosjet që fillojnë me pikë.
+   Nëse nuk mund ta ngarkosh dosjen .github, krijo skedarin nga Add file > Create new file,
+   me emrin .github/workflows/deploy-pages.yml dhe përmbajtjen nga ky ZIP.
+4. Bëj Commit changes.
+5. Settings > Pages > Build and deployment > Source: GitHub Actions.
+6. Actions > Deploy NORDWOOD to GitHub Pages > Run workflow > main > Run workflow.
+7. Prit që build dhe deploy të përfundojnë me shenjën e gjelbër.
+   Linku i faqes del te Settings > Pages dhe te përfundimi i workflow-t.
+
+ZIP-in shpaketoje para ngarkimit. Mos e ngarko ZIP-in si një skedar të vetëm në repository.
+
+Workflow e merr automatikisht rrugën e saktë nga GitHub Pages.
+Nuk ke nevojë të ndryshosh emrin e repository-t në kod.
+
+Ky version përmban ridizajnimin final të THE GEOGRAPHY WORKS:
+hartë reale, 46 destinacione, distanca ajrore dhe lidhje të animuara.
+Pjesët e tjera të webit janë ruajtur.
