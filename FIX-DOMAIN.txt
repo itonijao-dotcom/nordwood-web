@@ -1,0 +1,13 @@
+NORDWOOD.SITE — RREGULLIMI I ADRESAVE
+
+MËNYRA MË E SHPEJTË
+1. Në GitHub nordwood-web, zëvendëso package.json në rrënjë me package.json të ri.
+2. Kliko Commit changes. Publikimi fillon automatikisht.
+3. Prit shenjën e gjelbër te Actions dhe rifresko nordwood.site me Cmd+Shift+R.
+
+PËR ZIP-IN E PLOTË
+Nxirr skedarët dhe ngarko përmbajtjen në rrënjën e repository-t, përfshirë .github.
+Mos ngarko ZIP-in si një skedar të vetëm.
+Custom domain te Settings > Pages duhet të jetë nordwood.site.
+
+Build-i përdor rrënjën e domainit dhe nuk e shton më /nordwood-web/.
