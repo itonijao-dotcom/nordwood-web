@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { aboutFactory, sustainableForest } from "../assets-home";
+import { sustainableForest } from "../assets-home";
+import { companyWorkshop } from "../company-workshop";
 import { SiteFooter, SiteHeader } from "../site-shared";
 import EuropeDistanceMap from "./europe-distance-map";
 
@@ -15,7 +16,7 @@ export default function AboutPage(){
     <SiteHeader theme="light"/>
     <section className="about-page-hero">
       <div><span className="nw-section-tag">ABOUT NORDWOOD / 01</span><h1>BUILT HERE.<br/><em>THINKING<br/>EUROPE.</em></h1><p>NORDWOOD is developing a specialized parquet production base in North Macedonia, conceived from the beginning to serve the European market with proximity, flexibility and stronger logistical responsiveness.</p></div>
-      <div className="about-page-photo"><img src={aboutFactory} alt="NORDWOOD industrial site"/><span>NORTH MACEDONIA / EUROPEAN ORIENTATION</span></div>
+      <div className="about-page-photo"><img src={companyWorkshop} alt="Interior of a woodworking production workshop"/><span>NORTH MACEDONIA / EUROPEAN ORIENTATION</span></div>
     </section>
 
     <section className="about-manifesto nw-pad">

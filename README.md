@@ -27,4 +27,4 @@ In GitHub, select **Settings > Pages > Source: GitHub Actions**. Then run **Acti
 
 The original Sites build is available through `npm run build`; `npm test` builds and checks its worker artifact.
 
-The pages, shared CSS, header, footer, images, and content outside the Geography Works section are unchanged.
+The homepage COMPANY section and About hero also use a locally stored photograph of a woodworking workshop. Photo provenance is documented in `PHOTO-SOURCE.txt`. The existing map, shared CSS, header, footer, and other sections are preserved.

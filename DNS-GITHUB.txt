@@ -1,0 +1,29 @@
+LIDHJA E DOMAINIT ME GITHUB PAGES
+
+Fillimisht, në repository: Settings > Pages > Custom domain.
+Shkruaje domainin tënd dhe kliko Save.
+
+Pastaj te DNS-i i domainit, për domainin kryesor:
+
+Type    Host    Value
+A       @       185.199.108.153
+A       @       185.199.109.153
+A       @       185.199.110.153
+A       @       185.199.111.153
+CNAME   www     USERNAME.github.io
+
+USERNAME zëvendësohet me emrin e përdoruesit ose organizatës në GitHub.
+Te CNAME mos vendos emrin e repository-t ose https://.
+TTL: Auto ose 3600.
+
+Zëvendëso rekordet e vjetra të webit për @ dhe www me rekordet e mësipërme.
+Ruaji rekordet e emailit (MX dhe TXT si SPF/DKIM).
+
+Pasi DNS check të kalojë, aktivizo Enforce HTTPS te Settings > Pages.
+Përhapja e DNS-it mund të marrë deri në 24 orë.
+Pas vendosjes ose ndryshimit të Custom domain, ekzekuto sërish workflow-n
+Deploy NORDWOOD to GitHub Pages, që build-i të marrë adresën e re.
+
+Workflow i përfshirë e merr automatikisht base path nga GitHub Pages.
+Burimi zyrtar:
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site

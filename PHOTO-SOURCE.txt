@@ -1,0 +1,15 @@
+Woodworking workshop interior
+
+Used in the homepage COMPANY section and in the About page hero.
+File: public/images/woodworking-workshop-interior.jpg
+
+Source: Pexels, video 35881634, poster photograph.
+Creator: ranjeet .
+Page: https://www.pexels.com/video/industrial-woodworking-factory-interior-overview-35881634/
+Image: https://images.pexels.com/videos/35881634/pexels-photo-35881634.jpeg?auto=compress&dpr=2&h=1080&w=1920
+Licence: https://www.pexels.com/license/
+Retrieved: 16 October 2026.
+
+This is a representative stock photograph of a woodworking factory interior.
+It is not an authenticated photograph of the NORDWOOD facility.
+The asset is included locally and does not depend on the stock website at runtime.

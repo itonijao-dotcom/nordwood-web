@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { heroFactory } from "./generated-assets";
-import { aboutFactory, sustainableForest } from "./assets-home";
+import { sustainableForest } from "./assets-home";
+import { companyWorkshop } from "./company-workshop";
 import { darkAlpin, darkChevron, darkCognac, darkSmoked } from "./assets-dark";
 import ProjectPlanner from "./project-planner";
 import { SiteFooter, SiteHeader } from "./site-shared";
@@ -59,7 +60,7 @@ export default function Home() {
           </div>
         </div>
         <div className="nw-intro-visual">
-          <img src={aboutFactory} alt="NORDWOOD production facility"/>
+          <img src={companyWorkshop} alt="Woodworking workshop interior with production machinery and timber"/>
           <div className="nw-visual-note"><span>DESIGNED FOR</span><strong>REPEATABLE<br/>QUALITY</strong><small>process · control · consistency</small></div>
         </div>
       </section>
