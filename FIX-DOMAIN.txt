@@ -1,13 +1,13 @@
-NORDWOOD.SITE — RREGULLIMI I ADRESAVE
+NORDWOOD.SITE — RREGULLIMI
 
 MËNYRA MË E SHPEJTË
-1. Në GitHub nordwood-web, zëvendëso package.json në rrënjë me package.json të ri.
+1. Zëvendëso next.config.ts në rrënjën e repository-t me skedarin e ri.
 2. Kliko Commit changes. Publikimi fillon automatikisht.
-3. Prit shenjën e gjelbër te Actions dhe rifresko nordwood.site me Cmd+Shift+R.
+3. Prit shenjën e gjelbër te Actions, pastaj rifresko faqen me Cmd+Shift+R.
+
+Ky konfigurim funksionon edhe me workflow-n e vjetër që përdor npx next build dhe NEXT_PUBLIC_BASE_PATH=/nordwood-web.
+Testuar me pikërisht këtë komandë; CSS, JS, logot, fotoja dhe harta përdorin rrënjën e domainit.
 
 PËR ZIP-IN E PLOTË
-Nxirr skedarët dhe ngarko përmbajtjen në rrënjën e repository-t, përfshirë .github.
-Mos ngarko ZIP-in si një skedar të vetëm.
-Custom domain te Settings > Pages duhet të jetë nordwood.site.
-
-Build-i përdor rrënjën e domainit dhe nuk e shton më /nordwood-web/.
+Ngarko përmbajtjen e nxjerrë në rrënjën e repository-t, përfshirë .github.
+Custom domain: nordwood.site.
